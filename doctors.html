@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MediCare | Doctors</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+      <div class="container">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">✚</span>
+          <span><strong>MediCare</strong><small>HEALTHCARE SYSTEM</small></span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+          <ul class="navbar-nav gap-lg-4">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="doctors.html">Doctors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="appointments.html">Appointments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="health-information.html"
+                >Health Information</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <div
+        class="page-heading d-flex justify-content-between align-items-center flex-wrap gap-2"
+      >
+        <h1>Our Doctors</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Doctors</li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="row g-3 mb-5 align-items-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="input-group">
+            <input
+              id="doctorSearch"
+              type="search"
+              class="form-control"
+              placeholder="Search doctor..."
+            />
+            <span class="input-group-text">⌕</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 ms-lg-auto">
+          <select
+            id="categoryFilter"
+            class="form-select"
+            aria-label="Filter doctors"
+          >
+            <option value="all">All Categories</option>
+            <option>General Physician</option>
+            <option>Pediatrician</option>
+            <option>Orthopedic Surgeon</option>
+            <option>Neurologist</option>
+            <option>Cardiologist</option>
+            <option>Dermatologist</option>
+          </select>
+        </div>
+      </div>
+
+      <section class="row g-4" id="doctorGrid">
+        <div class="col-md-6 col-lg-4">
+          <article
+            class="doctor-card p-3 h-100 d-flex flex-column align-items-center"
+            data-category="General Physician"
+            data-name="Dr. Carl Justine"
+          >
+            <img
+              src="https://scontent-mnl3-3.xx.fbcdn.net/v/t1.15752-9/834385565_2191151685140300_2847663623914644248_n.png?stp=dst-png_s480x480&_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeEtieCj1v6sj4ORpf4rvK7mmuQj488cxGaa5CPjzxzEZsuahs4fFLweJoxl35rayJQjDNYggbR9LX7dPUFfWzx5&_nc_ohc=jcvcqu7B2OYQ7kNvwHxcoK-&_nc_oc=AdpkRRqnF75V2JorVAgPI-oV4r9oO6b_7vm3Jir3GYzkdJWmm7d8sAFsAMX9FnoQwt8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mnl3-3.xx&_nc_ss=7a22e&oh=03_Q7cD6gG96peF74BljodTJ_mKMxcwEQvJTf3QLcKJ44Sy5ifqxw&oe=6AF048FC"
+              alt="Dr. Carl Justine"
+              class="mb-3"
+            />
+            <h2>Dr. Carl Justine</h2>
+            <h3>General Physician</h3>
+            <p class="mb-3">Diagnoses and treats a broad range of illnesses.</p>
+            <a class="small-btn mt-auto" href="doctor-carl.html"
+              >View Profile</a
+            >
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article
+            class="doctor-card p-3 h-100 d-flex flex-column align-items-center"
+            data-category="Pediatrician"
+            data-name="Dr. Johnny Sins"
+          >
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSU5GTYH71j0_tMUSfvNBieaM7hjlq1bHl7NAQqUHUmQ&s=10"
+              alt="Dr. Johnny Sins"
+              class="mb-3"
+            />
+            <h2>Dr. Johnny Sins</h2>
+            <h3>Pediatrician</h3>
+            <p class="mb-3">
+              Provides medical care for infants, children, and teens.
+            </p>
+            <a class="small-btn mt-auto" href="doctor-johnny.html"
+              >View Profile</a
+            >
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article
+            class="doctor-card p-3 h-100 d-flex flex-column align-items-center"
+            data-category="Orthopedic Surgeon"
+            data-name="Dr. Brian Carlo"
+          >
+            <img
+              src="https://scontent-mnl3-3.xx.fbcdn.net/v/t1.15752-9/825311374_1652806106227438_6602380795652121149_n.png?stp=dst-webp_s640x640&_nc_cat=109&ccb=1-7&_nc_sid=0024fc&_nc_ohc=fk-b9KRTXyIQ7kNvwEYoPz3&_nc_oc=AdrJrVgICnqlKP0Zzpto2EcXAcbvGu0vFO0PN68SX7UrlqsqJqrEyCoK1txSoQ8MCMs&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mnl3-3.xx&_nc_ss=7a22e&oh=03_Q7cD6gF06m7gzuBmYDgNpQOlBRzm7QUGkY9g4_tV1MlbHOfgmQ&oe=6AE99CFC"
+              alt="Dr. Brian Carlo"
+              class="mb-3"
+            />
+            <h2>Dr. Brian Carlo</h2>
+            <h3>Orthopedic Surgeon</h3>
+            <p class="mb-3">Performs surgery on bones, joints, and muscles.</p>
+            <a class="small-btn mt-auto" href="doctor-brian.html"
+              >View Profile</a
+            >
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article
+            class="doctor-card p-3 h-100 d-flex flex-column align-items-center"
+            data-category="Neurologist"
+            data-name="Dr. John Yuri"
+          >
+            <img
+              src="https://scontent-mnl1-2.xx.fbcdn.net/v/t1.15752-9/829491203_1656117655871962_7521707993277606459_n.png?stp=dst-webp_s640x640&_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_ohc=AWjdZ3n1dKwQ7kNvwFYj2WT&_nc_oc=Adq6xY1s9IT9jNyfY2ONeLnKePKQnX2KEUiH_h6pWF-RqKTZsZ1LWzJDNBvZf-2s9Gk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mnl1-2.xx&_nc_ss=7a22e&oh=03_Q7cD6gGRrBprKmqkeuZ2lKk__bTaBX6DrXmsVqRHpdmEC0R6pg&oe=6AE9C922"
+              alt="Dr. John Yuri"
+              class="mb-3"
+            />
+            <h2>Dr. John Yuri</h2>
+            <h3>Neurologist</h3>
+            <p class="mb-3">
+              Treats disorders of the brain and nervous system.
+            </p>
+            <a class="small-btn mt-auto" href="doctor-john.html"
+              >View Profile</a
+            >
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article
+            class="doctor-card p-3 h-100 d-flex flex-column align-items-center"
+            data-category="Cardiologist"
+            data-name="Dr. LeBron James"
+          >
+            <img
+              src="https://scontent-mnl3-2.xx.fbcdn.net/v/t1.15752-9/828858886_1570866367532332_2277404017718006488_n.png?stp=dst-webp_s526x395&_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=AqgU_WtHuvIQ7kNvwF_D0gm&_nc_oc=AdrSly3b-yCeMv7tU3_iMifZOWSsLV9kIsLXX4Xn_FtBs9O06ByBP1TwZgpaPYId8ac&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mnl3-2.xx&_nc_ss=7a22e&oh=03_Q7cD6gHyyFXAjRqGleQsX7niUvcjDbvGazlZWsMTATdzZ7-82w&oe=6AE9A662"
+              alt="Dr. LeBron James"
+              class="mb-3"
+            />
+            <h2>Dr. LeBron James</h2>
+            <h3>Cardiologist</h3>
+            <p class="mb-3">
+              Specializes in heart health and cardiovascular diseases.
+            </p>
+            <a class="small-btn mt-auto" href="doctor-lebron.html"
+              >View Profile</a
+            >
+          </article>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <article
+            class="doctor-card p-3 h-100 d-flex flex-column align-items-center"
+            data-category="Dermatologist"
+            data-name="Dr. Cris Jorome"
+          >
+            <img
+              src="https://scontent-mnl3-1.xx.fbcdn.net/v/t1.15752-9/829657066_1337196554987939_8925196597736763358_n.png?stp=dst-webp_s640x640&_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_ohc=GAqu6MEu4L0Q7kNvwGnMZoJ&_nc_oc=AdotlmX8t2bQ6sOVMEl8QndpOS9vKwxC0y8AcwGw4-IkW8UTprwjO3b2QqvYACIeoO8&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mnl3-1.xx&_nc_ss=7a22e&oh=03_Q7cD6gFf9NcR1AGwL70TmTJAhlqZpFQPeCcvMmdt-ovQYfO6sQ&oe=6AE9CB6E"
+              alt="Dr. Cris Jorome"
+              class="mb-3"
+            />
+            <h2>Dr. Cris Jorome</h2>
+            <h3>Dermatologist</h3>
+            <p class="mb-3">Focuses on skin, hair, and nail health.</p>
+            <a class="small-btn mt-auto" href="doctor-cris.html"
+              >View Profile</a
+            >
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-item">
+            <i class="fa-solid fa-envelope"></i> medicare@gmail.com
+          </div>
+          <div class="footer-item">
+            <i class="fa-solid fa-location-dot"></i>132 Maligaya St. Biringan
+            City, Laguna, Philippines
+          </div>
+          <div class="footer-item">
+            <i class="fa-solid fa-globe"></i> www.medicare.com
+          </div>
+          <div class="footer-item">
+            <i class="fa-solid fa-phone"></i> (048) 1456-7215
+          </div>
+          <div class="footer-item footer-brand">
+            <span class="brand-mark">✚</span><strong>MediCare</strong>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

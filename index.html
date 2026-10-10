@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MediCare | Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+      <div class="container">
+        <a class="brand" href="index.html" aria-label="MediCare Home">
+          <span class="brand-mark">✚</span>
+          <span><strong>MediCare</strong><small>HEALTHCARE SYSTEM</small></span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+          <ul class="navbar-nav gap-lg-4">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="doctors.html">Doctors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="appointments.html">Appointments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="health-information.html"
+                >Health Information</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="container hero">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <h1>Your <span>Health,</span><br />Our <span>Priority</span></h1>
+            <p>
+              We are committed to provide quality healthcare for you and your
+              family.
+            </p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a class="btn btn-mc" href="appointments.html"
+                >Book Appointment</a
+              >
+              <a class="btn btn-mc-outline" href="health-information.html"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=1000&q=85"
+                alt="Doctor checking a child"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-services">
+        <div class="container">
+          <h2 class="section-title">Our Services</h2>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <a class="highlight-card" href="services.html">
+                <span class="service-icon"
+                  ><i class="fa-solid fa-stethoscope"></i
+                ></span>
+                <h3>Consultation</h3>
+                <p>Get professional medical advice and consultation.</p>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a class="highlight-card" href="services.html">
+                <span class="service-icon"
+                  ><i class="fa-solid fa-flask"></i
+                ></span>
+                <h3>Laboratory</h3>
+                <p>Accurate and reliable laboratory testing.</p>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a class="highlight-card" href="services.html">
+                <span class="service-icon"
+                  ><i class="fa-solid fa-heart-pulse"></i
+                ></span>
+                <h3>Health Check-up</h3>
+                <p>Regular check-ups for a healthier you.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-item">
+            <i class="fa-solid fa-envelope"></i> medicare@gmail.com
+          </div>
+          <div class="footer-item">
+            <i class="fa-solid fa-location-dot"></i>132 Maligaya St. Biringan
+            City, Laguna, Philippines
+          </div>
+          <div class="footer-item">
+            <i class="fa-solid fa-globe"></i> www.medicare.com
+          </div>
+          <div class="footer-item">
+            <i class="fa-solid fa-phone"></i> (048) 1456-7215
+          </div>
+          <div class="footer-item footer-brand">
+            <span class="brand-mark">✚</span><strong>MediCare</strong>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

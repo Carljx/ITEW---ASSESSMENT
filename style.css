@@ -1,0 +1,427 @@
+:root {
+  --mc-teal: #2d8585;
+  --mc-teal-dark: #075e60;
+  --mc-teal-deep: #005d5d;
+  --mc-teal-brand: #287d78;
+  --mc-teal-light: #e1f3f3;
+  --mc-navy: #122c40;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+}
+
+/* ---------- Brand / Logo ---------- */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  text-decoration: none;
+  color: var(--mc-navy);
+}
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 51px;
+  height: 51px;
+  background: var(--mc-teal-brand);
+  color: #fff;
+  border-radius: 3px;
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.brand strong {
+  display: block;
+  font-size: 29px;
+  line-height: 27px;
+}
+.brand small {
+  display: block;
+  color: #999;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+/* Navbar tweaks */
+.navbar .nav-link {
+  color: #004e50;
+  font-weight: 700;
+  font-size: 17px;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--mc-teal);
+}
+
+/* ---------- Buttons (teal theme) ---------- */
+.btn-mc {
+  background: var(--mc-teal);
+  color: #fff;
+  border: 2px solid var(--mc-teal);
+  padding: 12px 28px;
+  font-size: 19px;
+}
+.btn-mc:hover {
+  background: var(--mc-teal-dark);
+  border-color: var(--mc-teal-dark);
+  color: #fff;
+}
+
+.btn-mc-outline {
+  background: #fff;
+  color: #111;
+  border: 2px solid var(--mc-teal);
+  padding: 12px 28px;
+  font-size: 19px;
+}
+.btn-mc-outline:hover {
+  background: var(--mc-teal);
+  color: #fff;
+}
+
+.small-btn {
+  background: #fff;
+  border: 1px solid var(--mc-teal-dark);
+  color: var(--mc-teal-brand);
+  padding: 7px 22px;
+  font-size: 15px;
+  text-decoration: none;
+  display: inline-block;
+}
+.small-btn:hover {
+  background: var(--mc-teal-brand);
+  color: #fff;
+}
+
+/* ---------- Page heading ---------- */
+.page-heading {
+  border-bottom: 2px solid var(--mc-teal);
+  padding-bottom: 6px;
+  margin-bottom: 37px;
+}
+.page-heading h1 {
+  color: var(--mc-teal-dark);
+  font-weight: 400;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  padding-top: 40px;
+  padding-bottom: 32px;
+}
+.hero h1 {
+  font-size: clamp(2.25rem, 5vw + 1rem, 3.875rem);
+  line-height: 1.15;
+  font-weight: 400;
+  letter-spacing: -1px;
+  overflow-wrap: break-word;
+}
+.hero h1 span {
+  color: var(--mc-teal);
+}
+.hero p {
+  line-height: 1.45;
+  margin: 23px 0 42px;
+  max-width: 570px;
+}
+.hero-image-wrap {
+  position: relative;
+}
+.hero-image-wrap img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+/* ---------- Section title ---------- */
+.section-title {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 38px;
+}
+
+/* ---------- Service highlight cards (home) ---------- */
+.home-services {
+  border-top: 5px solid var(--mc-teal);
+  padding: 27px 0 40px;
+}
+.highlight-card {
+  border: 3px solid var(--mc-teal);
+  text-align: center;
+  padding: 16px 20px 28px;
+  text-decoration: none;
+  color: #111;
+  height: 100%;
+  display: block;
+  overflow-wrap: break-word;
+}
+.highlight-card h3 {
+  color: var(--mc-teal-brand);
+  margin: 4px 0 11px;
+}
+.highlight-card p {
+  line-height: 1.4;
+}
+.service-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 8px;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  border: 1px solid var(--mc-teal-brand);
+  background: var(--mc-teal-light);
+  color: #087b77;
+  font-size: 72px;
+}
+
+/* ---------- Round icons (services page) ---------- */
+.round-icon {
+  width: 124px;
+  height: 124px;
+  border-radius: 50%;
+  background: #e0f4f4;
+  border: 1px solid var(--mc-teal-brand);
+  color: #087b77;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 67px;
+  margin: 0 auto 8px;
+}
+
+/* ---------- Service cards ---------- */
+.service-card {
+  border: 1px solid #333;
+}
+
+/* ---------- Doctor cards ---------- */
+.doctor-card {
+  border: 1px solid #55b7b7;
+  box-shadow: 0 3px 4px #bbb;
+  text-align: center;
+}
+.doctor-card img {
+  width: 104px;
+  height: 104px;
+  border: 1px solid #777;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.doctor-card h2 {
+  font-size: 20px;
+}
+.doctor-card h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.doctor-card p {
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+/* ---------- Doctor profile ---------- */
+.doctor-profile {
+  border: 1px solid #55b7b7;
+  border-radius: 12px;
+  box-shadow: 0 3px 4px #bbb;
+}
+.profile-image img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #777;
+}
+.profile-info h2 {
+  color: var(--mc-teal-dark);
+}
+.profile-info h3 {
+  color: var(--mc-teal-brand);
+  font-weight: 700;
+  margin-top: 20px;
+}
+.profile-info p {
+  color: #555;
+  line-height: 1.7;
+}
+
+.back-btn {
+  background: #fff;
+  color: var(--mc-teal-dark);
+  border: 1px solid var(--mc-teal-dark);
+  padding: 7px 22px;
+  font-size: 15px;
+  text-decoration: none;
+  display: inline-block;
+}
+.back-btn:hover {
+  background: var(--mc-teal-dark);
+  color: #fff;
+}
+
+/* ---------- Appointment form ---------- */
+.appointment-form {
+  border: 1px solid #222;
+  box-shadow: 0 3px 4px #999;
+}
+.appointment-form label {
+  display: block;
+}
+.appointment-form input,
+.appointment-form select {
+  height: 48px;
+  margin-top: 4px;
+  border: 1px solid #444;
+  box-shadow: 0 3px 4px #999;
+  padding: 0 18px;
+}
+.submit-btn {
+  border: 0;
+  background: var(--mc-teal-deep);
+  color: #fff;
+  font-weight: 700;
+  height: 48px;
+}
+.submit-btn:hover {
+  background: var(--mc-teal-dark);
+  color: #fff;
+}
+
+/* ---------- Appointment side boxes ---------- */
+.box {
+  border: 1px solid #333;
+  border-radius: 12px;
+  box-shadow: 0 2px 3px #aaa;
+}
+.date-badge {
+  border: 1px solid var(--mc-teal-brand);
+  border-radius: 16px;
+  width: 96px;
+  height: 94px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.date-badge strong {
+  font-size: 24px;
+}
+.date-badge b {
+  font-size: 23px;
+  margin-top: 7px;
+}
+.confirmed {
+  color: #00a83b;
+}
+
+.bell {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  background: var(--mc-teal-deep);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 55px;
+  flex-shrink: 0;
+}
+
+/* ---------- Articles ---------- */
+.article-card {
+  border: 1px solid #333;
+  border-radius: 11px;
+  overflow: hidden;
+  height: 100%;
+}
+.article-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+.article-body {
+  padding: 17px 14px 23px;
+}
+.read-btn {
+  background: var(--mc-teal-deep);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 27px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.read-btn:hover {
+  background: var(--mc-teal-dark);
+  color: #fff;
+}
+
+/* ---------- Category buttons ---------- */
+.category-btn {
+  height: 57px;
+  background: #fff;
+  border: 3px solid var(--mc-teal-dark);
+  box-shadow: 0 3px 4px #999;
+  font-weight: 700;
+}
+.category-btn:hover {
+  background: var(--mc-teal-dark);
+  color: #fff;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background: #d8e7e9;
+  padding: 22px 4%;
+}
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 32px;
+}
+.footer-item {
+  white-space: nowrap;
+}
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--mc-navy);
+  font-size: 22px;
+}
+.footer-brand .brand-mark {
+  width: 42px;
+  height: 42px;
+  font-size: 25px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+/* ---------- Breadcrumb Design ---------- */
+.page-heading .breadcrumb {
+  margin-bottom: 0;
+  font-family: Georgia, serif;
+  font-size: 20px;
+}
+.page-heading .breadcrumb a {
+  color: var(--mc-teal-brand);
+  text-decoration: none;
+}
+.page-heading .breadcrumb a:hover {
+  color: var(--mc-teal-dark);
+  text-decoration: underline;
+}
+.page-heading .breadcrumb-item.active {
+  color: #111;
+}
